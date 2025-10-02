@@ -1,19 +1,19 @@
 import * as React from 'react';
 
 const columns = [
-    { field: 'id', headerName: 'ID', width: 70 },
-    { field: 'Name', headerName: 'Name', width: 200 },
-    { field: 'Date', headerName: 'Date', width: 100},
-    { field: 'Products', headerName: 'Products', width: 200 },
-    { field: 'Total', headerName: 'Total Price', width: 200 },
+    { field: 'id', headerName: 'ID' },
+    { field: 'Name', headerName: 'Name' },
+    { field: 'Date', headerName: 'Date'},
+    { field: 'Products', headerName: 'Products' },
+    { field: 'Total', headerName: 'Total Price'},
 ];
 export default function MyTable({orders}) {
     return(
         <>
         <div className='px-4 pt-3 pb-4 rounded border border-gray-800 flex-1'>
             <strong>Recent Orders</strong>
-            <div className='mt-3'>
-                <table border="1" className='w-full border border-gray-700'>
+            <div className='overflow-x-auto mt-3'>
+                <table border="1" className='min-w-full table-auto border border-gray-700'>
                     <thead className="bg-[#13131F]">
                         <tr>
                             {columns.map((hd)=>

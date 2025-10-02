@@ -45,7 +45,7 @@ export default function Dashboard() {
             <section className="flex flex-row gap-4 w-full mb-4">
                 <Transations />
             </section>
-            <section className="flex flex-row gap-4 w-full mb-4">
+            <section className="w-full mb-4">
                 <MyTable orders={orders}/>
             </section>
         </div>
