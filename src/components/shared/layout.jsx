@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./sidebar";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import { useMenu } from '../../context/menuContext';
 
 export default function Layout() {
