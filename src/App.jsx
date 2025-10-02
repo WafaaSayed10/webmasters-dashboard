@@ -1,12 +1,11 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard'
 import Layout from './components/shared/layout';
 import Customers from './pages/customers';
 import Login from './pages/Login';
 import Products from './pages/products';
 import Orders from './pages/orders';
-import { HelmetProvider } from 'react-helmet-async';
 import Messages from './pages/messages';
 import AddItemModal from './pages/AddItem';
 import Register from './pages/Register';
@@ -22,7 +21,6 @@ import { SearchProvider } from './context/SearchContext';
 function App() {
   return (
     <>
-    <HelmetProvider>
       <MenuProvider>
       <InfoProvider>
         <SearchProvider>
@@ -48,7 +46,6 @@ function App() {
         </SearchProvider>
       </InfoProvider>
       </MenuProvider>
-      </HelmetProvider>
     </>
   )
 }

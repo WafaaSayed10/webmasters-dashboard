@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from 'react-helmet-async';
 import StatsGrid from "../components/statsGrid";
 import Transations from "../components/transations";
 import MyTable from "../components/Table";
@@ -34,11 +33,6 @@ export default function Dashboard() {
     }, []);
     return (
         <>
-        <Helmet>
-            <title>Dashboard</title>
-            <meta name="description" content="dashboard" />
-            <meta name="keywords" content="dashboard" />
-        </Helmet>
         <div className="text-[#fff] px-6 py-4">
             <section>
                 <h2 className="font-semibold text-[20px] mb-5">Overview</h2>
